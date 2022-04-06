@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+
+* {
+  box-sizing: border-box;
+}
+
+#Uname {
+  font-size: 20px;
+}
+#passW {
+  font-size: 20px;
+}
+#eMail {
+  font-size: 20px;
+}
+
+header {
+  font-family: "Roboto";
+  text-align: center;
+}
+
+#container {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: bold;
+  padding-top: 30px;
+  position: inherit;
+  width: 100%;
+  bottom: 45%;
+  display: block;
+}
+
+#flip {
+  height: 60px;
+  overflow: hidden;
+}
+
+#flip > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background: #d6dbd9;
+}
+#flip div:first-child div {
+  background: #4ec7f3;
+}
+#flip div:last-child div {
+  background: #dc143c;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+#formDiv {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+nav {
+  text-align: center;
+}
+
+#styleDate {
+  font-size: 28px;
+  color: white;
+}
+#curDate {
+  color: white;
+  font-size: 34px;
+}
+body {
+  text-align: center;
+  background-image: url("pngTree.png");
+}
+
+#styleDate {
+  font-weight: bolder;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#curDate {
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+#bList {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(168, 222, 243);
+  margin: 0;
+}
+
+#bList li {
+  display: block;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#bList li:hover {
+  background-color: rgb(247, 240, 240);
+}
+
+#bDiv {
+  text-align: center;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  border: 0;
+  width: 100%;
+  left: 0;
+}
+
+
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+
+.btn:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-1:hover {
+  background: #2980b9;
+}
+
+.btn-1:active {
+  background: #2980b9;
+  top: 2px;
+}
+
+.btn-1:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+.icon-send:before {
+  content: "\f1d8";
+}
+
+#btn {
+ text-align: center;
+  position:fixed;
+  right: 2.5%;
+  font-size:14px;
+}
+#sForm {
+  margin: 10px;
+  padding: 10px;
+}
